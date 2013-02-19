@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Address Book</title>
+        
+        <!-- Styles -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        
+        <!-- Content -->
+        <div id="content-view" class="container">
+            <!-- Contacts Stack -->
+            <ul id="contacts-stack">
+            </ul>
+        </div>
+        
+        <!-- Script -->
+        <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>  
+        <script type="text/javascript" src="js/underscore-min.js"></script>        
+        <script type="text/javascript" src="js/backbone-min.js"></script>     
+        <script type="text/javascript" src="js/jquery.mousewheel.js"></script>                   
+        <script type="text/javascript" src="js/stack.js"></script>
+        
+        <!-- Templates -->
+        <script type="text/template" id="contact-template">
+            <h3 class="name-label"><%-name %></h3>
+            <img src="<%-image %>" />
+            <p>Phone: <%-phone %></p>
+            <p><a href="<%-url %>" target="_blank"><%-url %></a></p>
+        </script>
+    </body>
+
+</html>
